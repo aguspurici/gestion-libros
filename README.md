@@ -19,7 +19,7 @@ Este proyecto es una aplicación web para la gestión de libros que permite a lo
 
 ### Base de datos
 
-* SQLite / PostgreSQL
+* PostgreSQL
 
 ---
 
@@ -30,13 +30,13 @@ Para ejecutar el proyecto en tu computadora seguí los siguientes pasos.
 ## 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU-USUARIO/NOMBRE-DEL-REPO.git
+git clone https://github.com/gestion-libros.git
 ```
 
 Entrar en la carpeta del proyecto:
 
 ```bash
-cd NOMBRE-DEL-REPO
+cd gestion-libros
 ```
 
 ---
@@ -51,16 +51,22 @@ Entrar a la carpeta del backend:
 cd backend
 ```
 
+Crear entorno virtual:
+
+```bash
+uv venv
+```
+
 Instalar dependencias:
 
 ```bash
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
 Iniciar el servidor:
 
 ```bash
-uvicorn main:app --reload
+uv uvicorn main:app --reload
 ```
 
 ---
