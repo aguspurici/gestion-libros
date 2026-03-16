@@ -65,13 +65,13 @@ uv pip install -r requirements.txt
 
 Antes de iniciar el backend, es necesario crear un archivo .env en la carpeta backend con las siguientes variables:
 
-# URL de la base de datos PostgreSQL
+### URL de la base de datos PostgreSQL
 
 ```bash
 DATABASE_URL=postgresql://usuario:contraseña@localhost:5432/nombre_db
 ```
 
-# Clave secreta para firmar los tokens JWT
+### Clave secreta para firmar los tokens JWT
 
 ```bash
 SECRET_KEY=una_clave_super_secreta
