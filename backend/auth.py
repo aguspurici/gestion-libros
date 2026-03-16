@@ -1,9 +1,14 @@
+import os
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from jose import jwt
+from dotenv import load_dotenv
+
+# cargamos variables del .env
+load_dotenv()
 
 # configuracion para la firma y duracion del token
-SECRET_KEY = "mi_clave_super_secreta"
+SECRET_KEY = os.environ.get("SECRET_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
